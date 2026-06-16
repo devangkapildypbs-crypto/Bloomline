@@ -1,0 +1,27 @@
+{
+  "levelId": "level_015",
+  "chapter": 2,
+  "levelNumber": 15,
+  "gridWidth": 5,
+  "gridHeight": 5,
+  "moveTargetTwoStars": 8,
+  "moveTargetThreeStars": 5,
+  "tutorialText": "",
+  "tiles": [
+    { "x": 0, "y": 2, "type": "Source", "rotation": 0, "color": "White", "locked": true },
+    { "x": 1, "y": 2, "type": "LockedCorner", "rotation": 0, "color": "White", "locked": true },
+    { "x": 1, "y": 3, "type": "Corner", "rotation": 270, "color": "White", "locked": false },
+    { "x": 2, "y": 3, "type": "LockedStraight", "rotation": 90, "color": "White", "locked": true },
+    { "x": 3, "y": 3, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
+    { "x": 3, "y": 4, "type": "Straight", "rotation": 90, "color": "White", "locked": false },
+    { "x": 4, "y": 4, "type": "Corner", "rotation": 180, "color": "White", "locked": false },
+    { "x": 4, "y": 3, "type": "Flower", "rotation": 90, "color": "White", "locked": true },
+    { "x": 2, "y": 2, "type": "Blocker", "rotation": 0, "color": "White", "locked": true }
+  ],
+  "solution": [
+    { "x": 1, "y": 3, "correctRotation": 270 },
+    { "x": 3, "y": 3, "correctRotation": 0 },
+    { "x": 3, "y": 4, "correctRotation": 90 },
+    { "x": 4, "y": 4, "correctRotation": 180 }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "levelId": "level_016",
+  "chapter": 3,
+  "levelNumber": 16,
+  "gridWidth": 5,
+  "gridHeight": 5,
+  "moveTargetTwoStars": 8,
+  "moveTargetThreeStars": 5,
+  "tutorialText": "All flowers must receive light to complete the level!",
+  "tiles": [
+    { "x": 0, "y": 2, "type": "Source", "rotation": 0, "color": "White", "locked": true },
+    { "x": 1, "y": 2, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 2, "y": 2, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
+    { "x": 2, "y": 3, "type": "Straight", "rotation": 90, "color": "White", "locked": false },
+    { "x": 2, "y": 4, "type": "Flower", "rotation": 90, "color": "White", "locked": true },
+    { "x": 3, "y": 2, "type": "Corner", "rotation": 180, "color": "White", "locked": false },
+    { "x": 3, "y": 1, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 3, "y": 0, "type": "Flower", "rotation": 270, "color": "White", "locked": true }
+  ],
+  "solution": [
+    { "x": 1, "y": 2, "correctRotation": 90 },
+    { "x": 2, "y": 2, "correctRotation": 0 },
+    { "x": 2, "y": 3, "correctRotation": 0 },
+    { "x": 3, "y": 2, "correctRotation": 180 },
+    { "x": 3, "y": 1, "correctRotation": 0 }
+  ]
+}

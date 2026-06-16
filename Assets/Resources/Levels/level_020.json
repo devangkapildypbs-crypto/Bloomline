@@ -1,0 +1,41 @@
+{
+  "levelId": "level_020",
+  "chapter": 3,
+  "levelNumber": 20,
+  "gridWidth": 6,
+  "gridHeight": 6,
+  "moveTargetTwoStars": 12,
+  "moveTargetThreeStars": 8,
+  "tutorialText": "",
+  "tiles": [
+    { "x": 0, "y": 4, "type": "Source", "rotation": 0, "color": "Red", "locked": true },
+    { "x": 0, "y": 1, "type": "Source", "rotation": 0, "color": "Blue", "locked": true },
+    { "x": 1, "y": 4, "type": "Corner", "rotation": 270, "color": "White", "locked": false },
+    { "x": 1, "y": 3, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 1, "y": 2, "type": "Corner", "rotation": 90, "color": "White", "locked": false },
+    { "x": 2, "y": 2, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 3, "y": 2, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
+    { "x": 3, "y": 3, "type": "Corner", "rotation": 270, "color": "White", "locked": false },
+    { "x": 4, "y": 3, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 5, "y": 3, "type": "Flower", "rotation": 0, "color": "Red", "locked": true },
+    { "x": 1, "y": 1, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
+    { "x": 1, "y": 0, "type": "Corner", "rotation": 270, "color": "White", "locked": false },
+    { "x": 2, "y": 0, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 3, "y": 0, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
+    { "x": 3, "y": 1, "type": "Straight", "rotation": 90, "color": "White", "locked": false },
+    { "x": 4, "y": 1, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 5, "y": 1, "type": "Flower", "rotation": 0, "color": "Blue", "locked": true },
+    { "x": 2, "y": 4, "type": "Blocker", "rotation": 0, "color": "White", "locked": true },
+    { "x": 4, "y": 2, "type": "Blocker", "rotation": 0, "color": "White", "locked": true }
+  ],
+  "solution": [
+    { "x": 1, "y": 4, "correctRotation": 90 },
+    { "x": 1, "y": 3, "correctRotation": 0 },
+    { "x": 1, "y": 2, "correctRotation": 180 },
+    { "x": 2, "y": 2, "correctRotation": 90 },
+    { "x": 3, "y": 2, "correctRotation": 0 },
+    { "x": 3, "y": 3, "correctRotation": 270 },
+    { "x": 4, "y": 3, "correctRotation": 90 },
+    { "x": 1, "y": 1, "correctRotation": 90 }
+  ]
+}

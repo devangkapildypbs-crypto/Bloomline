@@ -1,0 +1,20 @@
+{
+  "levelId": "level_004",
+  "chapter": 1,
+  "levelNumber": 4,
+  "gridWidth": 4,
+  "gridHeight": 4,
+  "moveTargetTwoStars": 4,
+  "moveTargetThreeStars": 2,
+  "tutorialText": "Corner tiles connect two adjacent sides. Try rotating them!",
+  "tiles": [
+    { "x": 0, "y": 1, "type": "Source", "rotation": 0, "color": "White", "locked": true },
+    { "x": 1, "y": 1, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
+    { "x": 1, "y": 2, "type": "Corner", "rotation": 180, "color": "White", "locked": false },
+    { "x": 2, "y": 2, "type": "Flower", "rotation": 0, "color": "White", "locked": true }
+  ],
+  "solution": [
+    { "x": 1, "y": 1, "correctRotation": 90 },
+    { "x": 1, "y": 2, "correctRotation": 0 }
+  ]
+}

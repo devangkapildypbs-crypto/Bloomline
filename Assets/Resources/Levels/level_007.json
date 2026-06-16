@@ -1,0 +1,22 @@
+{
+  "levelId": "level_007",
+  "chapter": 1,
+  "levelNumber": 7,
+  "gridWidth": 4,
+  "gridHeight": 4,
+  "moveTargetTwoStars": 5,
+  "moveTargetThreeStars": 3,
+  "tutorialText": "Try to solve the puzzle in as few moves as possible for more stars!",
+  "tiles": [
+    { "x": 0, "y": 2, "type": "Source", "rotation": 0, "color": "White", "locked": true },
+    { "x": 1, "y": 2, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
+    { "x": 1, "y": 3, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
+    { "x": 2, "y": 3, "type": "Corner", "rotation": 270, "color": "White", "locked": false },
+    { "x": 2, "y": 2, "type": "Flower", "rotation": 0, "color": "White", "locked": true }
+  ],
+  "solution": [
+    { "x": 1, "y": 2, "correctRotation": 0 },
+    { "x": 1, "y": 3, "correctRotation": 90 },
+    { "x": 2, "y": 3, "correctRotation": 180 }
+  ]
+}
