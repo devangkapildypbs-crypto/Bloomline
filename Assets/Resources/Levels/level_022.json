@@ -1,0 +1,82 @@
+{
+    "gridHeight":  5,
+    "levelNumber":  22,
+    "moveTargetTwoStars":  7,
+    "moveTargetThreeStars":  4,
+    "tutorialText":  "Blue light connects to Blue flowers.",
+    "tiles":  [
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  4,
+                      "type":  "Source",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  270,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  270,
+                      "y":  1,
+                      "type":  "Flower",
+                      "x":  3
+                  }
+              ],
+    "levelId":  "level_022",
+    "solution":  [
+                     {
+                         "y":  3,
+                         "correctRotation":  0,
+                         "x":  1
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  0,
+                         "x":  1
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  180,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  5,
+    "chapter":  2
+}

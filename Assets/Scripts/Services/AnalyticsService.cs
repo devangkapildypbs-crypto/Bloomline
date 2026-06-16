@@ -36,6 +36,15 @@ namespace Bloomline.Services
 
         /// <summary>Log when settings are changed.</summary>
         void LogSettingsChanged();
+
+        /// <summary>Log when a level is failed/abandoned.</summary>
+        void LogLevelFailed(int levelNumber);
+
+        /// <summary>Log when a hint is purchased.</summary>
+        void LogHintPurchased(string source);
+
+        /// <summary>Log when the daily puzzle is started.</summary>
+        void LogDailyPuzzleStarted();
     }
 
     /// <summary>
@@ -131,6 +140,30 @@ namespace Bloomline.Services
         public void LogSettingsChanged()
         {
             LogEvent("settings_changed");
+        }
+
+        /// <inheritdoc/>
+        public void LogLevelFailed(int levelNumber)
+        {
+            LogEvent("level_failed", new Dictionary<string, string>
+            {
+                { "level", levelNumber.ToString() }
+            });
+        }
+
+        /// <inheritdoc/>
+        public void LogHintPurchased(string source)
+        {
+            LogEvent("hint_purchased", new Dictionary<string, string>
+            {
+                { "source", source }
+            });
+        }
+
+        /// <inheritdoc/>
+        public void LogDailyPuzzleStarted()
+        {
+            LogEvent("daily_puzzle_started");
         }
     }
 }

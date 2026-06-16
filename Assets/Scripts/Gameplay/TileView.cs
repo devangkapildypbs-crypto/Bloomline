@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine;
 using Bloomline.Core;
 using Bloomline.Utilities;
+using Bloomline.Services;
+using Bloomline.Data;
 
 namespace Bloomline.Gameplay
 {
@@ -22,6 +24,7 @@ namespace Bloomline.Gameplay
         private bool _isPowered;
         private bool _isAnimating;
         private Coroutine _currentAnimation;
+        private ParticleSystem _particleSystem;
 
         // Colors for tile types
         private static readonly Color COLOR_TILE_BASE = new Color(0.85f, 0.82f, 0.75f, 1f);      // Stone
@@ -73,7 +76,7 @@ namespace Bloomline.Gameplay
             if (_model.Type == TileType.Source || _model.Type == TileType.Flower)
             {
                 _iconRenderer = CreateSpriteChild("Icon", 2);
-                _iconRenderer.sprite = CreateCircleSprite();
+                _iconRenderer.sprite = CreateIconSprite(_model.Color);
                 _iconRenderer.transform.localScale = Vector3.one * GameConstants.TILE_SIZE * 0.35f;
             }
 
@@ -92,6 +95,32 @@ namespace Bloomline.Gameplay
                 _lockRenderer.transform.localPosition = new Vector3(0.3f, 0.3f, 0);
                 _lockRenderer.color = COLOR_LOCKED_OVERLAY;
             }
+
+            // Create particle system
+            GameObject psObj = new GameObject("Particles");
+            psObj.transform.SetParent(transform);
+            psObj.transform.localPosition = Vector3.zero;
+            _particleSystem = psObj.AddComponent<ParticleSystem>();
+
+            var main = _particleSystem.main;
+            main.duration = 1f;
+            main.loop = false;
+            main.startSpeed = 2f;
+            main.startSize = 0.2f;
+            main.startLifetime = 0.5f;
+            main.playOnAwake = false;
+            main.scalingMode = ParticleSystemScalingMode.Hierarchy;
+
+            var emission = _particleSystem.emission;
+            emission.rateOverTime = 0;
+
+            var shape = _particleSystem.shape;
+            shape.shapeType = ParticleSystemShapeType.Circle;
+            shape.radius = GameConstants.TILE_SIZE * 0.4f;
+
+            var renderer = _particleSystem.GetComponent<ParticleSystemRenderer>();
+            renderer.sortingOrder = 5;
+            renderer.material = new Material(Shader.Find("Sprites/Default"));
 
             // Add collider for tap detection
             BoxCollider2D col = gameObject.AddComponent<BoxCollider2D>();
@@ -161,6 +190,13 @@ namespace Bloomline.Gameplay
             bool wasChanged = _isPowered != powered;
             _isPowered = powered;
 
+            if (wasChanged && powered && _particleSystem != null)
+            {
+                var main = _particleSystem.main;
+                main.startColor = GetPoweredColor();
+                _particleSystem.Emit(10);
+            }
+
             if (_channelRenderer != null)
             {
                 _channelRenderer.color = powered ? GetPoweredColor() : COLOR_CHANNEL_UNPOWERED;
@@ -203,6 +239,12 @@ namespace Bloomline.Gameplay
         public void AnimateBloom()
         {
             if (_model.Type != TileType.Flower) return;
+            if (_particleSystem != null)
+            {
+                var main = _particleSystem.main;
+                main.startColor = GetColorForTileColor(_model.Color);
+                _particleSystem.Emit(20);
+            }
             StartCoroutine(BloomCoroutine());
         }
 
@@ -211,6 +253,15 @@ namespace Bloomline.Gameplay
         /// </summary>
         public void AnimateShake()
         {
+            bool reducedMotion = false;
+            var saveService = ServiceLocator.Get<ISaveService>();
+            if (saveService != null)
+            {
+                reducedMotion = saveService.LoadSettings().reducedMotionEnabled;
+            }
+
+            if (reducedMotion) return;
+
             StartCoroutine(ShakeCoroutine());
         }
 
@@ -228,6 +279,22 @@ namespace Bloomline.Gameplay
             float targetAngle = -_model.RotationDegrees;
             float startAngle = targetAngle + 90f; // Started from 90° before
             float elapsed = 0f;
+
+            bool reducedMotion = false;
+            var saveService = ServiceLocator.Get<ISaveService>();
+            if (saveService != null)
+            {
+                reducedMotion = saveService.LoadSettings().reducedMotionEnabled;
+            }
+
+            if (reducedMotion)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, targetAngle);
+                _isAnimating = false;
+                _currentAnimation = null;
+                UpdateChannelShape();
+                yield break;
+            }
 
             while (elapsed < GameConstants.ROTATION_DURATION)
             {
@@ -404,14 +471,87 @@ namespace Bloomline.Gameplay
                 float dx = Mathf.Abs(x - 31.5f);
                 float dy = Mathf.Abs(y - 31.5f);
                 float cornerRadius = 8f;
-                if (dx > 24f && dy > 24f)
+                
+                float distToCorner = Mathf.Sqrt((dx - 24f) * (dx - 24f) + (dy - 24f) * (dy - 24f));
+                bool isOutside = dx > 24f && dy > 24f && distToCorner >= cornerRadius;
+                
+                if (isOutside)
                 {
-                    float dist = Mathf.Sqrt((dx - 24f) * (dx - 24f) + (dy - 24f) * (dy - 24f));
-                    pixels[i] = dist < cornerRadius ? Color.white : Color.clear;
+                    pixels[i] = Color.clear;
                 }
                 else
                 {
-                    pixels[i] = Color.white;
+                    // Gradient based on y (subtle)
+                    float gradient = Mathf.Lerp(0.85f, 1.0f, y / 63f);
+                    
+                    // Inner border
+                    bool isBorder = (dx > 29f || dy > 29f) || 
+                                    (dx > 24f && dy > 24f && distToCorner > cornerRadius - 2f);
+                                    
+                    if (isBorder)
+                    {
+                        pixels[i] = new Color(0.7f * gradient, 0.7f * gradient, 0.7f * gradient, 1f);
+                    }
+                    else
+                    {
+                        pixels[i] = new Color(gradient, gradient, gradient, 1f);
+                    }
+                }
+            }
+            tex.SetPixels(pixels);
+            tex.Apply();
+            tex.filterMode = FilterMode.Bilinear;
+            return Sprite.Create(tex, new Rect(0, 0, 64, 64), new Vector2(0.5f, 0.5f), 64);
+        }
+
+        private static Sprite CreateIconSprite(TileColor tileColor)
+        {
+            bool cbMode = false;
+            var saveService = ServiceLocator.Get<ISaveService>();
+            if (saveService != null)
+            {
+                cbMode = saveService.LoadSettings().colorblindModeEnabled;
+            }
+
+            Texture2D tex = new Texture2D(64, 64);
+            Color[] pixels = new Color[64 * 64];
+            for (int i = 0; i < pixels.Length; i++)
+            {
+                int x = i % 64;
+                int y = i / 64;
+                float dx = x - 31.5f;
+                float dy = y - 31.5f;
+                float dist = Mathf.Sqrt(dx * dx + dy * dy);
+                float edge = 28f;
+
+                if (dist < edge)
+                {
+                    bool isPattern = false;
+                    if (cbMode)
+                    {
+                        if (tileColor == TileColor.Red)
+                        {
+                            if ((x % 16 < 8) && (y % 16 < 8)) isPattern = true; // Dots
+                        }
+                        else if (tileColor == TileColor.Blue)
+                        {
+                            if ((x + y) % 16 < 8) isPattern = true; // Stripes
+                        }
+                        else if (tileColor == TileColor.Yellow)
+                        {
+                            if (Mathf.Abs(dx) < 6 || Mathf.Abs(dy) < 6) isPattern = true; // Cross
+                        }
+                    }
+
+                    pixels[i] = isPattern ? new Color(0.3f, 0.3f, 0.3f, 1f) : Color.white;
+                }
+                else if (dist < edge + 2f)
+                {
+                    pixels[i] = new Color(1, 1, 1, 1f - (dist - edge) / 2f);
+                }
+                else
+                {
+                    pixels[i] = Color.clear;
                 }
             }
             tex.SetPixels(pixels);

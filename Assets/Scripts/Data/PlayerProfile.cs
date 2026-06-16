@@ -99,6 +99,8 @@ namespace Bloomline.Data
         public bool soundEnabled = true;
         public bool musicEnabled = true;
         public bool hapticsEnabled = true;
+        public bool reducedMotionEnabled = false;
+        public bool colorblindModeEnabled = false;
         public float soundVolume = 1.0f;
         public float musicVolume = 0.7f;
     }

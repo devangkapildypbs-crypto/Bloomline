@@ -1,0 +1,202 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  34,
+    "moveTargetTwoStars":  19,
+    "moveTargetThreeStars":  12,
+    "tutorialText":  "Double U-turns.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  270,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Flower",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Source",
+                      "x":  5
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  270,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  5
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  5
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Flower",
+                      "x":  2
+                  }
+              ],
+    "levelId":  "level_034",
+    "solution":  [
+                     {
+                         "y":  2,
+                         "correctRotation":  270,
+                         "x":  1
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  180,
+                         "x":  1
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  0,
+                         "x":  0
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  0
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  4
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  0,
+                         "x":  4
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  180,
+                         "x":  5
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  270,
+                         "x":  5
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  4
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  2
+}

@@ -1,0 +1,114 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  30,
+    "moveTargetTwoStars":  7,
+    "moveTargetThreeStars":  4,
+    "tutorialText":  "Wind your way through the blockers.",
+    "tiles":  [
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  5,
+                      "type":  "Source",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Flower",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Blocker",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Blocker",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Blocker",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Blocker",
+                      "x":  4
+                  }
+              ],
+    "levelId":  "level_030",
+    "solution":  [
+                     {
+                         "y":  4,
+                         "correctRotation":  0,
+                         "x":  1
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  270,
+                         "x":  3
+                     },
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  2
+}

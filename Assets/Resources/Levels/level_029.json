@@ -1,0 +1,179 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  29,
+    "moveTargetTwoStars":  14,
+    "moveTargetThreeStars":  9,
+    "tutorialText":  "Multiple flowers require multiple sources.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Flower",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Flower",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Flower",
+                      "x":  5
+                  }
+              ],
+    "levelId":  "level_029",
+    "solution":  [
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  4
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  2
+}

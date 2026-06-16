@@ -1,0 +1,176 @@
+{
+    "gridHeight":  5,
+    "levelNumber":  27,
+    "moveTargetTwoStars":  16,
+    "moveTargetThreeStars":  10,
+    "tutorialText":  "A larger area means longer paths.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Flower",
+                      "x":  5
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  270,
+                      "y":  0,
+                      "type":  "Source",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Flower",
+                      "x":  5
+                  }
+              ],
+    "levelId":  "level_027",
+    "solution":  [
+                     {
+                         "y":  2,
+                         "correctRotation":  270,
+                         "x":  1
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  4
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  270,
+                         "x":  4
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  4
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  2
+}

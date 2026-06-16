@@ -1,0 +1,125 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  45,
+    "moveTargetTwoStars":  5,
+    "moveTargetThreeStars":  3,
+    "tutorialText":  "Three colors, three locks.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  5,
+                      "type":  "LockedStraight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Flower",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  3,
+                      "type":  "LockedStraight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Flower",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  1,
+                      "type":  "LockedStraight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Flower",
+                      "x":  3
+                  }
+              ],
+    "levelId":  "level_045",
+    "solution":  [
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  2
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  3
+}

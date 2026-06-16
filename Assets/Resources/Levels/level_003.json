@@ -1,22 +1,69 @@
 {
-  "levelId": "level_003",
-  "chapter": 1,
-  "levelNumber": 3,
-  "gridWidth": 4,
-  "gridHeight": 3,
-  "moveTargetTwoStars": 4,
-  "moveTargetThreeStars": 3,
-  "tutorialText": "Some tiles need multiple taps to find the right rotation.",
-  "tiles": [
-    { "x": 0, "y": 1, "type": "Source", "rotation": 0, "color": "White", "locked": true },
-    { "x": 1, "y": 1, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
-    { "x": 2, "y": 1, "type": "Straight", "rotation": 90, "color": "White", "locked": false },
-    { "x": 3, "y": 1, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
-    { "x": 3, "y": 2, "type": "Flower", "rotation": 270, "color": "White", "locked": true }
-  ],
-  "solution": [
-    { "x": 1, "y": 1, "correctRotation": 90 },
-    { "x": 2, "y": 1, "correctRotation": 90 },
-    { "x": 3, "y": 1, "correctRotation": 270 }
-  ]
+    "levelId":  "level_003",
+    "chapter":  1,
+    "levelNumber":  3,
+    "gridWidth":  4,
+    "gridHeight":  3,
+    "moveTargetTwoStars":  5,
+    "moveTargetThreeStars":  3,
+    "tutorialText":  "Some tiles need multiple taps to find the right rotation.",
+    "tiles":  [
+                  {
+                      "x":  0,
+                      "y":  1,
+                      "type":  "Source",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  true
+                  },
+                  {
+                      "x":  1,
+                      "y":  1,
+                      "type":  "Straight",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  2,
+                      "y":  1,
+                      "type":  "Straight",
+                      "rotation":  180,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  3,
+                      "y":  1,
+                      "type":  "Corner",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  3,
+                      "y":  2,
+                      "type":  "Flower",
+                      "rotation":  270,
+                      "color":  "White",
+                      "locked":  true
+                  }
+              ],
+    "solution":  [
+                     {
+                         "x":  1,
+                         "y":  1,
+                         "correctRotation":  90
+                     },
+                     {
+                         "x":  2,
+                         "y":  1,
+                         "correctRotation":  90
+                     },
+                     {
+                         "x":  3,
+                         "y":  1,
+                         "correctRotation":  270
+                     }
+                 ]
 }

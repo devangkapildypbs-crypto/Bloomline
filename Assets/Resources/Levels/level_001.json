@@ -1,18 +1,43 @@
 {
-  "levelId": "level_001",
-  "chapter": 1,
-  "levelNumber": 1,
-  "gridWidth": 3,
-  "gridHeight": 3,
-  "moveTargetTwoStars": 2,
-  "moveTargetThreeStars": 1,
-  "tutorialText": "Tap the tile to rotate it and connect the light to the flower!",
-  "tiles": [
-    { "x": 0, "y": 1, "type": "Source", "rotation": 0, "color": "White", "locked": true },
-    { "x": 1, "y": 1, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
-    { "x": 2, "y": 1, "type": "Flower", "rotation": 0, "color": "White", "locked": true }
-  ],
-  "solution": [
-    { "x": 1, "y": 1, "correctRotation": 90 }
-  ]
+    "levelId":  "level_001",
+    "chapter":  1,
+    "levelNumber":  1,
+    "gridWidth":  3,
+    "gridHeight":  3,
+    "moveTargetTwoStars":  2,
+    "moveTargetThreeStars":  1,
+    "tutorialText":  "Welcome to the Garden! Tap the tile to rotate it and connect the source to the flower.",
+    "tiles":  [
+                  {
+                      "x":  0,
+                      "y":  1,
+                      "type":  "Source",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  true
+                  },
+                  {
+                      "x":  1,
+                      "y":  1,
+                      "type":  "Straight",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  2,
+                      "y":  1,
+                      "type":  "Flower",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  true
+                  }
+              ],
+    "solution":  [
+                     {
+                         "x":  1,
+                         "y":  1,
+                         "correctRotation":  90
+                     }
+                 ]
 }

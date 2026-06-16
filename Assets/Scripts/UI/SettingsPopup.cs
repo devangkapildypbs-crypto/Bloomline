@@ -8,7 +8,7 @@ using Bloomline.Services;
 namespace Bloomline.UI
 {
     /// <summary>
-    /// Modal settings popup with toggles for Sound, Music, and Haptics.
+    /// Modal settings popup with toggles for Sound, Music, Haptics, and Accessibility.
     /// Saves changes immediately via ISaveService and updates AudioService/HapticsService.
     /// Creates UI programmatically on a high-priority canvas overlay.
     /// </summary>
@@ -19,6 +19,8 @@ namespace Bloomline.UI
         private Toggle _soundToggle;
         private Toggle _musicToggle;
         private Toggle _hapticsToggle;
+        private Toggle _reducedMotionToggle;
+        private Toggle _colorblindToggle;
 
         private void Awake()
         {
@@ -51,46 +53,56 @@ namespace Bloomline.UI
 
             // ── Settings panel ──
             Image panel = UIHelper.CreatePanel(root, UIHelper.ColorDeepGreen,
-                new Vector2(0, 100), new Vector2(700, 650));
+                new Vector2(0, 50), new Vector2(700, 850));
 
             Transform panelRoot = panel.transform;
 
             // ── Border accent ──
             Image border = UIHelper.CreatePanel(panelRoot, UIHelper.ColorSoftGold,
-                Vector2.zero, new Vector2(710, 660));
+                Vector2.zero, new Vector2(710, 860));
             border.transform.SetAsFirstSibling();
 
             // ── Title ──
             Text title = UIHelper.CreateText(panelRoot, "SETTINGS",
-                new Vector2(0, 250), 54, UIHelper.ColorSoftGold);
+                new Vector2(0, 340), 54, UIHelper.ColorSoftGold);
             title.fontStyle = FontStyle.Bold;
 
             // ── Divider ──
             UIHelper.CreateImage(panelRoot, UIHelper.ColorSage,
-                new Vector2(0, 205), new Vector2(550, 3));
+                new Vector2(0, 280), new Vector2(550, 3));
 
             // ── Sound Toggle ──
             _soundToggle = UIHelper.CreateToggle(panelRoot, "Sound",
-                _settings.soundEnabled, new Vector2(0, 130),
+                _settings.soundEnabled, new Vector2(0, 200),
                 OnSoundChanged);
 
             // ── Music Toggle ──
             _musicToggle = UIHelper.CreateToggle(panelRoot, "Music",
-                _settings.musicEnabled, new Vector2(0, 30),
+                _settings.musicEnabled, new Vector2(0, 100),
                 OnMusicChanged);
 
             // ── Haptics Toggle ──
             _hapticsToggle = UIHelper.CreateToggle(panelRoot, "Haptics",
-                _settings.hapticsEnabled, new Vector2(0, -70),
+                _settings.hapticsEnabled, new Vector2(0, 0),
                 OnHapticsChanged);
+
+            // ── Reduced Motion Toggle ──
+            _reducedMotionToggle = UIHelper.CreateToggle(panelRoot, "Reduced Motion",
+                _settings.reducedMotionEnabled, new Vector2(0, -100),
+                OnReducedMotionChanged);
+
+            // ── Colorblind Mode Toggle ──
+            _colorblindToggle = UIHelper.CreateToggle(panelRoot, "Colorblind Mode",
+                _settings.colorblindModeEnabled, new Vector2(0, -200),
+                OnColorblindModeChanged);
 
             // ── Divider ──
             UIHelper.CreateImage(panelRoot, UIHelper.ColorSage,
-                new Vector2(0, -140), new Vector2(550, 3));
+                new Vector2(0, -270), new Vector2(550, 3));
 
             // ── Close button ──
             Button closeBtn = UIHelper.CreateButton(panelRoot, "CLOSE",
-                new Vector2(0, -215), new Vector2(300, 80),
+                new Vector2(0, -340), new Vector2(300, 80),
                 UIHelper.ColorSage, Close);
         }
 
@@ -121,6 +133,18 @@ namespace Bloomline.UI
             SaveAndApplySettings();
         }
 
+        private void OnReducedMotionChanged(bool enabled)
+        {
+            _settings.reducedMotionEnabled = enabled;
+            SaveAndApplySettings();
+        }
+
+        private void OnColorblindModeChanged(bool enabled)
+        {
+            _settings.colorblindModeEnabled = enabled;
+            SaveAndApplySettings();
+        }
+
         /// <summary>
         /// Persist settings and apply them to the audio service.
         /// </summary>
@@ -145,7 +169,8 @@ namespace Bloomline.UI
             }
 
             Debug.Log($"[Settings] Updated — Sound={_settings.soundEnabled}, " +
-                      $"Music={_settings.musicEnabled}, Haptics={_settings.hapticsEnabled}");
+                      $"Music={_settings.musicEnabled}, Haptics={_settings.hapticsEnabled}, " +
+                      $"ReducedMotion={_settings.reducedMotionEnabled}, Colorblind={_settings.colorblindModeEnabled}");
         }
 
         /// <summary>

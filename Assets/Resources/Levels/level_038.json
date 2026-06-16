@@ -1,0 +1,85 @@
+{
+    "gridHeight":  5,
+    "levelNumber":  38,
+    "moveTargetTwoStars":  5,
+    "moveTargetThreeStars":  3,
+    "tutorialText":  "Locked corners can be tricky.",
+    "tiles":  [
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "LockedCorner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  4,
+                      "type":  "LockedCorner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Flower",
+                      "x":  4
+                  }
+              ],
+    "levelId":  "level_038",
+    "solution":  [
+                     {
+                         "y":  3,
+                         "correctRotation":  0,
+                         "x":  1
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  270,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  3
+}

@@ -1,0 +1,64 @@
+{
+    "gridHeight":  5,
+    "levelNumber":  36,
+    "moveTargetTwoStars":  4,
+    "moveTargetThreeStars":  2,
+    "tutorialText":  "Welcome to the Sanctuary! Some tiles are locked in place.",
+    "tiles":  [
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  2,
+                      "type":  "LockedStraight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Flower",
+                      "x":  4
+                  }
+              ],
+    "levelId":  "level_036",
+    "solution":  [
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  5,
+    "chapter":  3
+}

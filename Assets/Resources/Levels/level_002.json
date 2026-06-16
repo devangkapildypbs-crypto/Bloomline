@@ -1,20 +1,56 @@
 {
-  "levelId": "level_002",
-  "chapter": 1,
-  "levelNumber": 2,
-  "gridWidth": 4,
-  "gridHeight": 3,
-  "moveTargetTwoStars": 3,
-  "moveTargetThreeStars": 2,
-  "tutorialText": "Rotate tiles to build a path for the light.",
-  "tiles": [
-    { "x": 0, "y": 1, "type": "Source", "rotation": 0, "color": "White", "locked": true },
-    { "x": 1, "y": 1, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
-    { "x": 2, "y": 1, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
-    { "x": 3, "y": 1, "type": "Flower", "rotation": 0, "color": "White", "locked": true }
-  ],
-  "solution": [
-    { "x": 1, "y": 1, "correctRotation": 90 },
-    { "x": 2, "y": 1, "correctRotation": 90 }
-  ]
+    "levelId":  "level_002",
+    "chapter":  1,
+    "levelNumber":  2,
+    "gridWidth":  4,
+    "gridHeight":  3,
+    "moveTargetTwoStars":  4,
+    "moveTargetThreeStars":  2,
+    "tutorialText":  "Great! Now try connecting multiple tiles.",
+    "tiles":  [
+                  {
+                      "x":  0,
+                      "y":  1,
+                      "type":  "Source",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  true
+                  },
+                  {
+                      "x":  1,
+                      "y":  1,
+                      "type":  "Straight",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  2,
+                      "y":  1,
+                      "type":  "Straight",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  3,
+                      "y":  1,
+                      "type":  "Flower",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  true
+                  }
+              ],
+    "solution":  [
+                     {
+                         "x":  1,
+                         "y":  1,
+                         "correctRotation":  90
+                     },
+                     {
+                         "x":  2,
+                         "y":  1,
+                         "correctRotation":  90
+                     }
+                 ]
 }

@@ -10,8 +10,11 @@ namespace Bloomline.Core
         public const string SCENE_GAME = "GameScene";
 
         // Game settings
-        public const int TOTAL_LEVELS = 20;
+        public const int TOTAL_LEVELS = 50;
         public const int MAX_STARS = 3;
+        public const int CHAPTER_1_END = 20;
+        public const int CHAPTER_2_END = 35;
+        public const int CHAPTER_3_END = 50;
         public const float TILE_SIZE = 1.0f;
         public const float TILE_SPACING = 0.05f;
         public const float ROTATION_DURATION = 0.15f;

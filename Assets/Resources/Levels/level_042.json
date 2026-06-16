@@ -1,0 +1,124 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  42,
+    "moveTargetTwoStars":  10,
+    "moveTargetThreeStars":  6,
+    "tutorialText":  "Zig-zag through the locks.",
+    "tiles":  [
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  0,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  0,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  1,
+                      "type":  "LockedCorner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  3,
+                      "type":  "LockedCorner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Flower",
+                      "x":  5
+                  }
+              ],
+    "levelId":  "level_042",
+    "solution":  [
+                     {
+                         "y":  0,
+                         "correctRotation":  270,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  270,
+                         "x":  2
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  270,
+                         "x":  3
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  270,
+                         "x":  4
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  4
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  3
+}

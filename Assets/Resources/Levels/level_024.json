@@ -1,0 +1,163 @@
+{
+    "gridHeight":  5,
+    "levelNumber":  24,
+    "moveTargetTwoStars":  14,
+    "moveTargetThreeStars":  9,
+    "tutorialText":  "Sometimes paths need to weave around each other.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Flower",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  2,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Flower",
+                      "x":  4
+                  }
+              ],
+    "levelId":  "level_024",
+    "solution":  [
+                     {
+                         "y":  3,
+                         "correctRotation":  270,
+                         "x":  1
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  270,
+                         "x":  2
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  0,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  5,
+    "chapter":  2
+}

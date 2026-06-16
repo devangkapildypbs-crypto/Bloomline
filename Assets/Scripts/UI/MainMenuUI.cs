@@ -117,9 +117,21 @@ namespace Bloomline.UI
                 new Vector2(0, -130), new Vector2(350, 90),
                 UIHelper.ColorGardenGreen, null);
 
+            // ── Daily Puzzle Button ──
+            Button dailyPuzzleButton = UIHelper.CreateButton(root, "Daily Puzzle (Coming Soon!)",
+                new Vector2(0, -250), new Vector2(500, 90),
+                UIHelper.ColorSage, null);
+            // Make text fit if needed, or adjust font size.
+            Text dailyText = dailyPuzzleButton.GetComponentInChildren<Text>();
+            if (dailyText != null)
+            {
+                dailyText.fontSize = 32;
+            }
+            dailyPuzzleButton.interactable = false; // "Coming soon" so disable interaction
+
             // ── Settings Button ──
             settingsButton = UIHelper.CreateButton(root, "SETTINGS",
-                new Vector2(0, -250), new Vector2(350, 90),
+                new Vector2(0, -370), new Vector2(350, 90),
                 UIHelper.ColorSage, null);
 
             // ── Version text ──

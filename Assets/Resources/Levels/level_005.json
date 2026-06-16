@@ -1,22 +1,69 @@
 {
-  "levelId": "level_005",
-  "chapter": 1,
-  "levelNumber": 5,
-  "gridWidth": 4,
-  "gridHeight": 4,
-  "moveTargetTwoStars": 5,
-  "moveTargetThreeStars": 3,
-  "tutorialText": "",
-  "tiles": [
-    { "x": 0, "y": 2, "type": "Source", "rotation": 0, "color": "White", "locked": true },
-    { "x": 1, "y": 2, "type": "Straight", "rotation": 0, "color": "White", "locked": false },
-    { "x": 2, "y": 2, "type": "Corner", "rotation": 0, "color": "White", "locked": false },
-    { "x": 2, "y": 1, "type": "Corner", "rotation": 270, "color": "White", "locked": false },
-    { "x": 3, "y": 1, "type": "Flower", "rotation": 0, "color": "White", "locked": true }
-  ],
-  "solution": [
-    { "x": 1, "y": 2, "correctRotation": 90 },
-    { "x": 2, "y": 2, "correctRotation": 180 },
-    { "x": 2, "y": 1, "correctRotation": 0 }
-  ]
+    "levelId":  "level_005",
+    "chapter":  1,
+    "levelNumber":  5,
+    "gridWidth":  4,
+    "gridHeight":  4,
+    "moveTargetTwoStars":  7,
+    "moveTargetThreeStars":  4,
+    "tutorialText":  "Look at the shape of the path. Can you see where the light needs to go?",
+    "tiles":  [
+                  {
+                      "x":  0,
+                      "y":  2,
+                      "type":  "Source",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  true
+                  },
+                  {
+                      "x":  1,
+                      "y":  2,
+                      "type":  "Straight",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  2,
+                      "y":  2,
+                      "type":  "Corner",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  2,
+                      "y":  1,
+                      "type":  "Corner",
+                      "rotation":  270,
+                      "color":  "White",
+                      "locked":  false
+                  },
+                  {
+                      "x":  3,
+                      "y":  1,
+                      "type":  "Flower",
+                      "rotation":  0,
+                      "color":  "White",
+                      "locked":  true
+                  }
+              ],
+    "solution":  [
+                     {
+                         "x":  1,
+                         "y":  2,
+                         "correctRotation":  90
+                     },
+                     {
+                         "x":  2,
+                         "y":  2,
+                         "correctRotation":  180
+                     },
+                     {
+                         "x":  2,
+                         "y":  1,
+                         "correctRotation":  0
+                     }
+                 ]
 }

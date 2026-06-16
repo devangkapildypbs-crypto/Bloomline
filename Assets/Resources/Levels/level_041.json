@@ -1,0 +1,166 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  41,
+    "moveTargetTwoStars":  13,
+    "moveTargetThreeStars":  8,
+    "tutorialText":  "A true Sanctuary puzzle.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  5,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  4,
+                      "type":  "LockedStraight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Flower",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  270,
+                      "y":  1,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  2,
+                      "type":  "LockedStraight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  270,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Flower",
+                      "x":  4
+                  }
+              ],
+    "levelId":  "level_041",
+    "solution":  [
+                     {
+                         "y":  4,
+                         "correctRotation":  0,
+                         "x":  0
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  270,
+                         "x":  2
+                     },
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  0
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  180,
+                         "x":  2
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  0,
+                         "x":  2
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  6,
+    "chapter":  3
+}

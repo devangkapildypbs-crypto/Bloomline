@@ -1,0 +1,127 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  47,
+    "moveTargetTwoStars":  8,
+    "moveTargetThreeStars":  5,
+    "tutorialText":  "Snaking paths everywhere.",
+    "tiles":  [
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  5,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  4,
+                      "type":  "Corner",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "LockedCorner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  3,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "LockedCorner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "LockedCorner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "LockedCorner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  0,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  0,
+                      "type":  "Flower",
+                      "x":  5
+                  }
+              ],
+    "levelId":  "level_047",
+    "solution":  [
+                     {
+                         "y":  4,
+                         "correctRotation":  0,
+                         "x":  0
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  0,
+                         "x":  1
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  0,
+                         "x":  2
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  0,
+                         "x":  3
+                     },
+                     {
+                         "y":  0,
+                         "correctRotation":  0,
+                         "x":  4
+                     }
+                 ],
+    "gridWidth":  7,
+    "chapter":  3
+}

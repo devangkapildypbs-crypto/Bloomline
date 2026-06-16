@@ -1,0 +1,300 @@
+{
+    "gridHeight":  7,
+    "levelNumber":  50,
+    "moveTargetTwoStars":  22,
+    "moveTargetThreeStars":  14,
+    "tutorialText":  "The Sanctuary\u0027s Core! Combine everything.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  6,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  270,
+                      "y":  6,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "LockedCorner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  270,
+                      "y":  5,
+                      "type":  "LockedCorner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  6,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  6,
+                      "type":  "Straight",
+                      "x":  5
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  6,
+                      "type":  "Flower",
+                      "x":  6
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  0,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  0,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  1,
+                      "type":  "LockedCorner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "LockedCorner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  0,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  0,
+                      "type":  "Straight",
+                      "x":  5
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  0,
+                      "type":  "Flower",
+                      "x":  6
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  3,
+                      "type":  "LockedStraight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  3,
+                      "type":  "Straight",
+                      "x":  5
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  3,
+                      "type":  "Flower",
+                      "x":  6
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  6,
+                      "type":  "Blocker",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  0,
+                      "type":  "Blocker",
+                      "x":  3
+                  }
+              ],
+    "levelId":  "level_050",
+    "solution":  [
+                     {
+                         "y":  6,
+                         "correctRotation":  180,
+                         "x":  1
+                     },
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  6,
+                         "correctRotation":  90,
+                         "x":  4
+                     },
+                     {
+                         "y":  6,
+                         "correctRotation":  90,
+                         "x":  5
+                     },
+                     {
+                         "y":  0,
+                         "correctRotation":  270,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  0,
+                         "correctRotation":  0,
+                         "x":  4
+                     },
+                     {
+                         "y":  0,
+                         "correctRotation":  90,
+                         "x":  5
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  1
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  4
+                     },
+                     {
+                         "y":  3,
+                         "correctRotation":  90,
+                         "x":  5
+                     }
+                 ],
+    "gridWidth":  7,
+    "chapter":  3
+}

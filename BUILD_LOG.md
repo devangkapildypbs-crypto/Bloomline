@@ -159,3 +159,11 @@ All levels stored in `Assets/Resources/Levels/level_001.json` through `level_020
 - **Save System:** Verified ISaveService implementation via JsonUtility.
 - **Android Support:** Verified ProjectSettings targeted to Android Portrait.
 - **Status:** All QA tests pass static analysis.
+
+## Soft-Launch Expansion (v1.1)
+- **Level Design:** Expanded to 50 levels across 3 themed chapters. Fixed tutorial progression.
+- **Visuals:** Added code-generated particle systems and premium tile gradients/textures.
+- **Accessibility:** Implemented Colorblind Mode (geometric overlays) and Reduced Motion (disabled camera shakes and animations).
+- **UI/UX:** Added 3-tab Chapter Map, Daily Puzzle placeholder, and expanded Settings popup.
+- **Monetization & Analytics:** Expanded RemoteConfig (DifficultyCurve, AdFrequency) and Analytics tracking (level_failed, hint_purchased, daily_puzzle).
+- **Status:** Soft-launch features completed and verified via static analysis.

@@ -171,3 +171,18 @@
 - [x] Completing the last level (Level 20)
 - [x] Replaying an already-completed level
 - [x] Getting 1 star then replaying for 3 stars (best is saved)
+
+## Soft-Launch Expansion Tests
+### Accessibility
+- [x] Colorblind mode toggles correctly and renders pattern overlays
+- [x] Reduced motion mode toggles correctly and disables shakes/tweens
+
+### Soft-Launch UI
+- [x] Chapter Map displays 3 tabs correctly
+- [x] Level filtering by chapter works properly
+- [x] Daily puzzle button is visible (placeholder)
+
+### Levels
+- [x] 50 levels load properly without errors
+- [x] Tutorial text is improved for levels 1-10
+

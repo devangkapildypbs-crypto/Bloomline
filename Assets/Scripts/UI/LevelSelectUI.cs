@@ -10,22 +10,29 @@ using Bloomline.Services;
 namespace Bloomline.UI
 {
     /// <summary>
-    /// Level selection screen showing 20 level buttons in a scrollable grid.
+    /// Level selection screen showing level buttons in a scrollable grid.
+    /// Supports Chapter tabs to filter levels.
     /// Each button displays level number, lock/unlock state, and star rating.
     /// Color coding: locked=gray, unlocked=garden-green, completed=golden.
-    /// All UI is created programmatically.
     /// </summary>
     public class LevelSelectUI : MonoBehaviour
     {
         private Canvas _canvas;
         private LevelProgressionService _progression;
-        private readonly List<Button> _levelButtons = new List<Button>();
+        private readonly List<GameObject> _levelButtonObjects = new List<GameObject>();
 
-        // Grid layout constants (4 columns × 5 rows)
+        private RectTransform _content;
+        private int _currentChapter = 1;
+
+        // Grid layout constants (4 columns)
         private const int COLUMNS = 4;
         private const float BUTTON_SIZE = 200f;
         private const float BUTTON_SPACING = 30f;
         private const float GRID_TOP_OFFSET = -100f;
+
+        private Button _tab1Button;
+        private Button _tab2Button;
+        private Button _tab3Button;
 
         private void Awake()
         {
@@ -37,6 +44,7 @@ namespace Bloomline.UI
             _progression = new LevelProgressionService(saveService);
 
             CreateUI();
+            SelectChapter(1);
         }
 
         /// <summary>
@@ -72,34 +80,105 @@ namespace Bloomline.UI
             UIHelper.CreateImage(root, UIHelper.ColorSage,
                 new Vector2(0, 810), new Vector2(900, 3));
 
+            // ── Chapter Tabs ──
+            float tabY = 740;
+            _tab1Button = UIHelper.CreateButton(root, "1: The Garden", new Vector2(-320, tabY), new Vector2(300, 80), UIHelper.ColorSage, () => SelectChapter(1));
+            _tab2Button = UIHelper.CreateButton(root, "2: The Grove", new Vector2(0, tabY), new Vector2(300, 80), UIHelper.ColorSage, () => SelectChapter(2));
+            _tab3Button = UIHelper.CreateButton(root, "3: The Sanctuary", new Vector2(320, tabY), new Vector2(300, 80), UIHelper.ColorSage, () => SelectChapter(3));
+
             // ── Scrollable Grid ──
-            RectTransform content = UIHelper.CreateVerticalScrollView(root,
-                new Vector2(0, -60), new Vector2(1000, 1500));
+            _content = UIHelper.CreateVerticalScrollView(root,
+                new Vector2(0, -120), new Vector2(1000, 1380));
+        }
+
+        private void SelectChapter(int chapter)
+        {
+            _currentChapter = chapter;
+            PlayButtonSound();
+
+            // Update Tab Colors
+            UpdateTabVisuals(_tab1Button, chapter == 1);
+            UpdateTabVisuals(_tab2Button, chapter == 2);
+            UpdateTabVisuals(_tab3Button, chapter == 3);
+
+            RefreshGrid();
+        }
+
+        private void UpdateTabVisuals(Button btn, bool isSelected)
+        {
+            if (btn == null) return;
+            Image img = btn.GetComponent<Image>();
+            if (img != null)
+            {
+                img.color = isSelected ? UIHelper.ColorGardenGreen : UIHelper.ColorSage;
+            }
+            Text txt = btn.GetComponentInChildren<Text>();
+            if (txt != null)
+            {
+                txt.color = isSelected ? UIHelper.ColorSoftGold : UIHelper.ColorCream;
+                txt.fontStyle = isSelected ? FontStyle.Bold : FontStyle.Normal;
+            }
+        }
+
+        private void RefreshGrid()
+        {
+            // Clear existing buttons
+            foreach (var go in _levelButtonObjects)
+            {
+                Destroy(go);
+            }
+            _levelButtonObjects.Clear();
+
+            int startLevel = 1;
+            int endLevel = 20;
+
+            if (_currentChapter == 1)
+            {
+                startLevel = 1;
+                endLevel = GameConstants.CHAPTER_1_END;
+            }
+            else if (_currentChapter == 2)
+            {
+                startLevel = GameConstants.CHAPTER_1_END + 1;
+                endLevel = GameConstants.CHAPTER_2_END;
+            }
+            else if (_currentChapter == 3)
+            {
+                startLevel = GameConstants.CHAPTER_2_END + 1;
+                endLevel = GameConstants.CHAPTER_3_END;
+            }
+
+            int totalLevelsInChapter = endLevel - startLevel + 1;
 
             // Calculate total content height
-            int rows = Mathf.CeilToInt((float)GameConstants.TOTAL_LEVELS / COLUMNS);
+            int rows = Mathf.CeilToInt((float)totalLevelsInChapter / COLUMNS);
             float totalHeight = rows * (BUTTON_SIZE + BUTTON_SPACING) + BUTTON_SPACING;
-            content.sizeDelta = new Vector2(0, totalHeight);
+            
+            // Adjust offset to make top padding larger
+            totalHeight += Mathf.Abs(GRID_TOP_OFFSET);
+            _content.sizeDelta = new Vector2(0, totalHeight);
 
             // ── Create Level Buttons ──
-            for (int i = 1; i <= GameConstants.TOTAL_LEVELS; i++)
+            int index = 0;
+            for (int i = startLevel; i <= endLevel; i++)
             {
-                CreateLevelButton(content, i);
+                CreateLevelButton(_content, i, index);
+                index++;
             }
         }
 
         /// <summary>
         /// Create a single level button within the grid.
         /// </summary>
-        private void CreateLevelButton(Transform parent, int levelNumber)
+        private void CreateLevelButton(Transform parent, int levelNumber, int index)
         {
             bool isUnlocked = _progression.IsLevelUnlocked(levelNumber);
             int stars = _progression.GetStarsForLevel(levelNumber);
             bool isCompleted = stars > 0;
 
             // Calculate grid position
-            int col = (levelNumber - 1) % COLUMNS;
-            int row = (levelNumber - 1) / COLUMNS;
+            int col = index % COLUMNS;
+            int row = index / COLUMNS;
 
             float gridWidth = COLUMNS * (BUTTON_SIZE + BUTTON_SPACING) - BUTTON_SPACING;
             float startX = -gridWidth / 2f + BUTTON_SIZE / 2f;
@@ -174,7 +253,7 @@ namespace Bloomline.UI
             int capturedLevel = levelNumber; // Capture for closure
             btn.onClick.AddListener(() => OnLevelPressed(capturedLevel));
 
-            _levelButtons.Add(btn);
+            _levelButtonObjects.Add(go);
         }
 
         // ──────────────────── Handlers ────────────────────

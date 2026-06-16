@@ -24,6 +24,11 @@ namespace Bloomline.Services
         /// Returns true if a rewarded ad is loaded and ready to show.
         /// </summary>
         bool IsRewardedAdReady { get; }
+
+        /// <summary>
+        /// Initialize the ads SDK.
+        /// </summary>
+        void Initialize();
     }
 
     /// <summary>
@@ -35,6 +40,12 @@ namespace Bloomline.Services
     {
         /// <inheritdoc/>
         public bool IsRewardedAdReady => true;
+
+        /// <inheritdoc/>
+        public void Initialize()
+        {
+            Debug.Log("[Ads] Ads SDK initialized (placeholder)");
+        }
 
         /// <inheritdoc/>
         public void ShowInterstitial(Action onComplete)

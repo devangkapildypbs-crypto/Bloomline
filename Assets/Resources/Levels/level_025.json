@@ -1,0 +1,115 @@
+{
+    "gridHeight":  5,
+    "levelNumber":  25,
+    "moveTargetTwoStars":  8,
+    "moveTargetThreeStars":  5,
+    "tutorialText":  "Blockers force you into tighter spaces.",
+    "tiles":  [
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Source",
+                      "x":  0
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  270,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  1,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Corner",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  2,
+                      "type":  "Flower",
+                      "x":  4
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  {
+
+                            },
+                      "type":  "Blocker",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  {
+
+                            },
+                      "type":  "Blocker",
+                      "x":  2
+                  }
+              ],
+    "levelId":  "level_025",
+    "solution":  [
+                     {
+                         "y":  2,
+                         "correctRotation":  180,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  0,
+                         "x":  1
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  270,
+                         "x":  3
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  3
+                     }
+                 ],
+    "gridWidth":  5,
+    "chapter":  2
+}

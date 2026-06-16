@@ -37,6 +37,9 @@ namespace Bloomline.Services
 
         /// <summary>Whether the daily puzzle feature is enabled.</summary>
         bool DailyPuzzleEnabled { get; }
+
+        /// <summary>Multiplier for difficulty progression.</summary>
+        float DifficultyCurveModifier { get; }
     }
 
     /// <summary>
@@ -95,6 +98,10 @@ namespace Bloomline.Services
         /// <inheritdoc/>
         public bool DailyPuzzleEnabled =>
             GetBool("daily_puzzle_enabled", GameConstants.DEFAULT_DAILY_PUZZLE_ENABLED);
+
+        /// <inheritdoc/>
+        public float DifficultyCurveModifier =>
+            GetFloat("difficulty_curve_modifier", 1.0f);
 
         /// <summary>
         /// Set an override value (useful for testing or local tuning).

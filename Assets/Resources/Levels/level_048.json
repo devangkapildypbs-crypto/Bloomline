@@ -1,0 +1,188 @@
+{
+    "gridHeight":  6,
+    "levelNumber":  48,
+    "moveTargetTwoStars":  10,
+    "moveTargetThreeStars":  6,
+    "tutorialText":  "Almost there! Master the locks.",
+    "tiles":  [
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  5,
+                      "type":  "Source",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  4,
+                      "type":  "LockedCorner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  4,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  270,
+                      "y":  4,
+                      "type":  "LockedCorner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  5,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Red",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Flower",
+                      "x":  5
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  270,
+                      "y":  1,
+                      "type":  "Source",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  90,
+                      "y":  2,
+                      "type":  "LockedCorner",
+                      "x":  1
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Straight",
+                      "x":  2
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "Straight",
+                      "x":  3
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  180,
+                      "y":  2,
+                      "type":  "LockedCorner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  false,
+                      "rotation":  90,
+                      "y":  1,
+                      "type":  "Corner",
+                      "x":  4
+                  },
+                  {
+                      "color":  "Blue",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Flower",
+                      "x":  5
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Blocker",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  5,
+                      "type":  "Blocker",
+                      "x":  3
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Blocker",
+                      "x":  2
+                  },
+                  {
+                      "color":  "White",
+                      "locked":  true,
+                      "rotation":  0,
+                      "y":  1,
+                      "type":  "Blocker",
+                      "x":  3
+                  }
+              ],
+    "levelId":  "level_048",
+    "solution":  [
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  4,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  5,
+                         "correctRotation":  90,
+                         "x":  4
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  2
+                     },
+                     {
+                         "y":  2,
+                         "correctRotation":  90,
+                         "x":  3
+                     },
+                     {
+                         "y":  1,
+                         "correctRotation":  0,
+                         "x":  4
+                     }
+                 ],
+    "gridWidth":  7,
+    "chapter":  3
+}
