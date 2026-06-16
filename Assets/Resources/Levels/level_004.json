@@ -14,7 +14,7 @@
     { "x": 2, "y": 2, "type": "Flower", "rotation": 0, "color": "White", "locked": true }
   ],
   "solution": [
-    { "x": 1, "y": 1, "correctRotation": 90 },
-    { "x": 1, "y": 2, "correctRotation": 0 }
+    { "x": 1, "y": 1, "correctRotation": 270 },
+    { "x": 1, "y": 2, "correctRotation": 90 }
   ]
 }

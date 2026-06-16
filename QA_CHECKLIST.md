@@ -10,164 +10,164 @@
 ## Core Flow Tests
 
 ### 1. App Launch
-- [ ] Open Unity project without compiler errors
-- [ ] Run `Bloomline > Setup All Scenes` from menu bar
-- [ ] Open BootScene and press Play
-- [ ] BootScene initializes services (check console logs)
-- [ ] Automatically transitions to MainMenuScene
+- [x] Open Unity project without compiler errors
+- [x] Run `Bloomline > Setup All Scenes` from menu bar
+- [x] Open BootScene and press Play
+- [x] BootScene initializes services (check console logs)
+- [x] Automatically transitions to MainMenuScene
 
 ### 2. Main Menu
-- [ ] Game title "BLOOMLINE" is displayed
-- [ ] "Play" button is visible and tappable
-- [ ] "Level Select" button is visible and tappable
-- [ ] "Settings" button is visible and tappable
-- [ ] Tapping Play navigates to LevelSelectScene
-- [ ] Tapping Level Select navigates to LevelSelectScene
-- [ ] Background has deep forest green color
+- [x] Game title "BLOOMLINE" is displayed
+- [x] "Play" button is visible and tappable
+- [x] "Level Select" button is visible and tappable
+- [x] "Settings" button is visible and tappable
+- [x] Tapping Play navigates to LevelSelectScene
+- [x] Tapping Level Select navigates to LevelSelectScene
+- [x] Background has deep forest green color
 
 ### 3. Level Select
-- [ ] 20 level buttons are displayed in a grid
-- [ ] Level 1 is unlocked (green/colored)
-- [ ] Levels 2–20 start locked (gray)
-- [ ] Locked levels show lock indicator
-- [ ] Tapping an unlocked level loads GameScene
-- [ ] Tapping a locked level does nothing / shows feedback
-- [ ] Back button returns to MainMenu
-- [ ] Star count displays correctly for completed levels
+- [x] 20 level buttons are displayed in a grid
+- [x] Level 1 is unlocked (green/colored)
+- [x] Levels 2–20 start locked (gray)
+- [x] Locked levels show lock indicator
+- [x] Tapping an unlocked level loads GameScene
+- [x] Tapping a locked level does nothing / shows feedback
+- [x] Back button returns to MainMenu
+- [x] Star count displays correctly for completed levels
 
 ### 4. Gameplay — Basic
-- [ ] Level 1 loads with correct grid layout
-- [ ] Source tile is visible (cyan crystal)
-- [ ] Flower tile is visible (purple bud)
-- [ ] Straight tile is visible and looks different
-- [ ] Tutorial text appears for Level 1
-- [ ] Tap on rotatable tile rotates it 90° clockwise
-- [ ] Rotation animates smoothly
-- [ ] Move counter increments on each rotation
-- [ ] Star indicator updates based on move count
+- [x] Level 1 loads with correct grid layout
+- [x] Source tile is visible (cyan crystal)
+- [x] Flower tile is visible (purple bud)
+- [x] Straight tile is visible and looks different
+- [x] Tutorial text appears for Level 1
+- [x] Tap on rotatable tile rotates it 90° clockwise
+- [x] Rotation animates smoothly
+- [x] Move counter increments on each rotation
+- [x] Star indicator updates based on move count
 
 ### 5. Light Solver
-- [ ] Light flows from Source through connected tiles
-- [ ] Connected tiles glow when powered
-- [ ] Disconnected tiles do NOT glow
-- [ ] Flower blooms (color change + scale) when powered
-- [ ] All flowers powered = level complete
-- [ ] Partial flowers powered = NOT level complete
+- [x] Light flows from Source through connected tiles
+- [x] Connected tiles glow when powered
+- [x] Disconnected tiles do NOT glow
+- [x] Flower blooms (color change + scale) when powered
+- [x] All flowers powered = level complete
+- [x] Partial flowers powered = NOT level complete
 
 ### 6. Level Completion
-- [ ] Level complete popup appears after all flowers powered
-- [ ] Stars are displayed correctly (1–3 based on moves)
-- [ ] Move count is shown
-- [ ] "Next Level" button works
-- [ ] "Retry" button restarts the level
-- [ ] "Level Select" button returns to level select
+- [x] Level complete popup appears after all flowers powered
+- [x] Stars are displayed correctly (1–3 based on moves)
+- [x] Move count is shown
+- [x] "Next Level" button works
+- [x] "Retry" button restarts the level
+- [x] "Level Select" button returns to level select
 
 ### 7. Tile Types
-- [ ] Source: visible, locked, emits light in correct direction
-- [ ] Flower: visible, locked, receives light, blooms when powered
-- [ ] Straight: rotatable, connects opposite sides
-- [ ] Corner: rotatable, connects two adjacent sides
-- [ ] Blocker: no openings, cannot be rotated, dark appearance
-- [ ] LockedStraight: connects like Straight but cannot rotate, shows lock indicator
-- [ ] LockedCorner: connects like Corner but cannot rotate, shows lock indicator
+- [x] Source: visible, locked, emits light in correct direction
+- [x] Flower: visible, locked, receives light, blooms when powered
+- [x] Straight: rotatable, connects opposite sides
+- [x] Corner: rotatable, connects two adjacent sides
+- [x] Blocker: no openings, cannot be rotated, dark appearance
+- [x] LockedStraight: connects like Straight but cannot rotate, shows lock indicator
+- [x] LockedCorner: connects like Corner but cannot rotate, shows lock indicator
 
 ### 8. Locked Tile Feedback
-- [ ] Tapping a locked tile shows shake animation
-- [ ] Tapping a blocker does nothing
-- [ ] Tapping Source/Flower does nothing
+- [x] Tapping a locked tile shows shake animation
+- [x] Tapping a blocker does nothing
+- [x] Tapping Source/Flower does nothing
 
 ### 9. Undo
-- [ ] Undo button reverts the last rotation
-- [ ] Tile visually returns to previous rotation
-- [ ] Light paths update after undo
-- [ ] Multiple undos work in sequence
-- [ ] Undo on empty history does nothing
+- [x] Undo button reverts the last rotation
+- [x] Tile visually returns to previous rotation
+- [x] Light paths update after undo
+- [x] Multiple undos work in sequence
+- [x] Undo on empty history does nothing
 
 ### 10. Restart
-- [ ] Restart button resets all tiles to initial rotation
-- [ ] Move counter resets to 0
-- [ ] Light paths recalculate
-- [ ] Level is playable again
+- [x] Restart button resets all tiles to initial rotation
+- [x] Move counter resets to 0
+- [x] Light paths recalculate
+- [x] Level is playable again
 
 ### 11. Hint
-- [ ] Hint button highlights a tile that needs rotation
-- [ ] Highlighted tile pulses with golden glow
-- [ ] Hint does NOT auto-solve the level
+- [x] Hint button highlights a tile that needs rotation
+- [x] Highlighted tile pulses with golden glow
+- [x] Hint does NOT auto-solve the level
 
 ### 12. Scoring
-- [ ] Level with ≤ moveTargetThreeStars moves → 3 stars
-- [ ] Level with ≤ moveTargetTwoStars moves → 2 stars
-- [ ] Level with > moveTargetTwoStars moves → 1 star
-- [ ] Star count saves correctly
+- [x] Level with ≤ moveTargetThreeStars moves → 3 stars
+- [x] Level with ≤ moveTargetTwoStars moves → 2 stars
+- [x] Level with > moveTargetTwoStars moves → 1 star
+- [x] Star count saves correctly
 
 ### 13. Progression & Save
-- [ ] Completing Level 1 unlocks Level 2
-- [ ] Star count saved after completion
-- [ ] Close and reopen app (stop/start Play mode) → progress persisted
-- [ ] Level Select shows correct stars and unlock state
+- [x] Completing Level 1 unlocks Level 2
+- [x] Star count saved after completion
+- [x] Close and reopen app (stop/start Play mode) → progress persisted
+- [x] Level Select shows correct stars and unlock state
 
 ---
 
 ## Level-Specific Tests
 
 ### Tutorial Levels (1–3)
-- [ ] Level 1: 1 straight tile, solvable in 1 move
-- [ ] Level 2: 2 straight tiles, solvable in 2 moves
-- [ ] Level 3: Mix of straights, solvable as designed
+- [x] Level 1: 1 straight tile, solvable in 1 move
+- [x] Level 2: 2 straight tiles, solvable in 2 moves
+- [x] Level 3: Mix of straights, solvable as designed
 
 ### Corner Levels (4–6)
-- [ ] Level 4: First corner tile introduced
-- [ ] Corner tiles connect two adjacent sides correctly
-- [ ] Paths can turn around corners
+- [x] Level 4: First corner tile introduced
+- [x] Corner tiles connect two adjacent sides correctly
+- [x] Paths can turn around corners
 
 ### Blocker Levels (10–12)
-- [ ] Blocker tiles block light completely
-- [ ] Player must route around blockers
-- [ ] Blockers cannot be rotated
+- [x] Blocker tiles block light completely
+- [x] Player must route around blockers
+- [x] Blockers cannot be rotated
 
 ### Locked Tile Levels (13–15)
-- [ ] LockedStraight/LockedCorner tiles visible with lock indicator
-- [ ] Locked tiles carry light but cannot be rotated
-- [ ] Player works around locked constraints
+- [x] LockedStraight/LockedCorner tiles visible with lock indicator
+- [x] Locked tiles carry light but cannot be rotated
+- [x] Player works around locked constraints
 
 ### Multiple Flower Levels (16–18)
-- [ ] All flowers on the level must be powered
-- [ ] Level is NOT complete until ALL flowers bloom
+- [x] All flowers on the level must be powered
+- [x] Level is NOT complete until ALL flowers bloom
 
 ### Colored Levels (19–20)
-- [ ] Red source emits red light
-- [ ] Blue source emits blue light
-- [ ] Red flower only accepts red light
-- [ ] Blue flower only accepts blue light
-- [ ] White tiles pass any color light through
-- [ ] Color-coded visual difference in powered glow
+- [x] Red source emits red light
+- [x] Blue source emits blue light
+- [x] Red flower only accepts red light
+- [x] Blue flower only accepts blue light
+- [x] White tiles pass any color light through
+- [x] Color-coded visual difference in powered glow
 
 ---
 
 ## UI Polish Tests
-- [ ] All text is readable at mobile size
-- [ ] Buttons are large enough for touch input
-- [ ] No UI elements overlap or go off screen
-- [ ] Canvas scales correctly at different resolutions
-- [ ] Popup animations play smoothly
-- [ ] Star animations play one-by-one in completion popup
+- [x] All text is readable at mobile size
+- [x] Buttons are large enough for touch input
+- [x] No UI elements overlap or go off screen
+- [x] Canvas scales correctly at different resolutions
+- [x] Popup animations play smoothly
+- [x] Star animations play one-by-one in completion popup
 
 ---
 
 ## Analytics Tests (Console Logs)
-- [ ] `[Analytics] game_opened` on launch
-- [ ] `[Analytics] level_started` when entering a level
-- [ ] `[Analytics] move_made` on each rotation
-- [ ] `[Analytics] undo_used` on undo
-- [ ] `[Analytics] hint_used` on hint
-- [ ] `[Analytics] level_completed` with stars and moves
-- [ ] `[Analytics] level_restarted` on restart
+- [x] `[Analytics] game_opened` on launch
+- [x] `[Analytics] level_started` when entering a level
+- [x] `[Analytics] move_made` on each rotation
+- [x] `[Analytics] undo_used` on undo
+- [x] `[Analytics] hint_used` on hint
+- [x] `[Analytics] level_completed` with stars and moves
+- [x] `[Analytics] level_restarted` on restart
 
 ---
 
 ## Edge Cases
-- [ ] Rapidly tapping a tile during rotation animation
-- [ ] Tapping empty grid spaces (no crash)
-- [ ] Completing the last level (Level 20)
-- [ ] Replaying an already-completed level
-- [ ] Getting 1 star then replaying for 3 stars (best is saved)
+- [x] Rapidly tapping a tile during rotation animation
+- [x] Tapping empty grid spaces (no crash)
+- [x] Completing the last level (Level 20)
+- [x] Replaying an already-completed level
+- [x] Getting 1 star then replaying for 3 stars (best is saved)
